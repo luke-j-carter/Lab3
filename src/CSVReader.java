@@ -22,7 +22,7 @@ public class CSVReader {
                 if (row.length < 5) continue; // Skip if not enough columns
 
                 String state = row[0].trim();
-                String Description = row[1].trim(); // Keep as String
+                String Description = row[1].trim();
                 String personalIncome = row[2].trim();
                 String population = row[3].trim();
                 String perCapitaPersonalIncome = row[4].trim();
