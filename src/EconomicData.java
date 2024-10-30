@@ -1,9 +1,10 @@
 public class EconomicData {
     private String state;
-    private String Description;  // Changed to String
-    private String personalIncome;  // Changed to String
-    private String population;  // Changed to String
-    private String perCapitaPersonalIncome;  // Changed to String
+    private String Description;  
+    private String personalIncome; 
+    private String population;  
+    private String perCapitaPersonalIncome; 
+    //I had to change the data types to String in order for the program to work
 
     public EconomicData(String state, String year, String personalIncome, String population, String perCapitaPersonalIncome) {
         this.state = state;
