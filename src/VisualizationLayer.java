@@ -81,57 +81,5 @@ public class VisualizationLayer {
 
 }
 
-    /* Custom JPanel for drawing the chart
-    class ChartPanel extends JPanel {
-        private EconomicData currentData;
-
-        public void setData(EconomicData data) {
-            this.currentData = data;
-            repaint(); // Repaint to show the new chart
-        }
-
-        @Override
-        protected void paintComponent(Graphics g) {
-            super.paintComponent(g);
-            if (currentData != null) {
-                drawChart(g, currentData);
-            }
-        }
-
-        private void drawChart(Graphics g, EconomicData data) {
-            int width = getWidth();
-            int height = getHeight();
-            int barWidth = width / 4; // For four bars: Personal Income, Population, Per Capita Income
-            int maxBarHeight = height - 50; // Leave space for labels
-
-            // Values to be plotted
-            int[] values = {
-                    Integer.parseInt(data.getPersonalIncome()),
-                    Integer.parseInt(data.getPopulation()),
-                    Integer.parseInt(data.getPerCapitaPersonalIncome())
-            };
-
-            // Find the maximum value
-            int maxValue = 0;
-            for (int value : values) {
-                if (value > maxValue) {
-                    maxValue = value;
-                }
-            }
-
-            // Draw bars
-            String[] labels = {"Personal Income", "Population", "Per Capita Income"};
-            for (int i = 0; i < values.length; i++) {
-                int barHeight = (int) ((values[i] / (double) maxValue) * maxBarHeight);
-                g.setColor(Color.BLUE);
-                g.fillRect(i * barWidth + 10, maxBarHeight - barHeight, barWidth - 20, barHeight);
-                g.setColor(Color.BLACK);
-                g.drawString(labels[i], i * barWidth + 10, maxBarHeight + 15);
-                g.drawString(String.valueOf(values[i]), i * barWidth + 10, maxBarHeight - barHeight - 5);
-            }
-        }
-    }
-}
-*/
 
 
